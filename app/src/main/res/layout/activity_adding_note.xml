@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_16">
+
+            <EditText
+                android:id="@+id/txt_title"
+                style="@style/EditText.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_56"
+                android:background="@color/transparent"
+                android:hint="@string/title"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/textColorSecondary"
+                android:textSize="@dimen/text_16"
+                app:layout_constraintEnd_toEndOf="@+id/vw_bg"
+                app:layout_constraintStart_toStartOf="@id/vw_bg"
+                app:layout_constraintTop_toTopOf="@+id/vw_bg" />
+
+            <View
+                android:id="@+id/vw_bar_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginHorizontal="@dimen/dimen_12"
+                android:alpha="0.2"
+                android:background="@color/dividerColor"
+                app:layout_constraintEnd_toEndOf="@+id/vw_bg"
+                app:layout_constraintStart_toStartOf="@+id/vw_bg"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+            <EditText
+                android:id="@+id/txt_content"
+                style="@style/EditText.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@color/transparent"
+                android:gravity="start|top"
+                android:hint="@string/enter_note_content"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="@dimen/dimen_340"
+                android:textColorHint="@color/textColorSecondary"
+                android:textSize="@dimen/text_16"
+                app:layout_constraintBottom_toBottomOf="@+id/vw_bg"
+                app:layout_constraintEnd_toEndOf="@+id/vw_bg"
+                app:layout_constraintStart_toStartOf="@+id/vw_bg"
+                app:layout_constraintTop_toBottomOf="@+id/vw_bar_title" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

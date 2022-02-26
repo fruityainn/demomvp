@@ -1,0 +1,10 @@
+package com.hide.videophoto.ui.security.question
+
+import com.hide.videophoto.ui.base.BaseView
+
+interface QuestionView : BaseView {
+
+    fun onSettingQuestionSuccess()
+
+    fun onQueryDbError()
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1063291331285",
+    "project_id": "hide-video-photo-ddd87",
+    "storage_bucket": "hide-video-photo-ddd87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063291331285:android:200a938869c49beda9f85c",
+        "android_client_info": {
+          "package_name": "com.hide.videophoto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063291331285-803rdtb1a15cs1ob479ehm1ld6jvmonb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6Nc62nAJL4EfRlHO3ZznTkdQWOQHKF7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063291331285-803rdtb1a15cs1ob479ehm1ld6jvmonb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

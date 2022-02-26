@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_primary_radius_10">
+
+    <TextView
+        android:id="@+id/label_title"
+        style="@style/TextView.Medium"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/detail"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_file"
+        android:layout_width="@dimen/dimen_48"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="@+id/label_title"
+        app:layout_constraintTop_toBottomOf="@+id/label_title" />
+
+    <TextView
+        android:id="@+id/lbl_name"
+        style="@style/TextView.Medium"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:layout_constraintBottom_toBottomOf="@+id/img_file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_file"
+        app:layout_constraintTop_toTopOf="@+id/img_file" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cst_size"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24"
+        app:layout_constraintEnd_toEndOf="@+id/label_title"
+        app:layout_constraintStart_toStartOf="@+id/label_title"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_name">
+
+        <TextView
+            android:id="@+id/label_size"
+            style="@style/TextView.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/size"
+            android:textColor="@color/textColorSecondary"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_size"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_size"
+            style="@style/TextView.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1.6"
+            app:layout_constraintStart_toEndOf="@+id/label_size"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cst_folder"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintEnd_toEndOf="@+id/label_title"
+        app:layout_constraintStart_toStartOf="@+id/label_title"
+        app:layout_constraintTop_toBottomOf="@+id/cst_size">
+
+        <TextView
+            android:id="@+id/label_folder"
+            style="@style/TextView.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/private_folder"
+            android:textColor="@color/textColorSecondary"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_folder"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_folder"
+            style="@style/TextView.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1.6"
+            app:layout_constraintStart_toEndOf="@+id/label_folder"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cst_path"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintEnd_toEndOf="@+id/label_title"
+        app:layout_constraintStart_toStartOf="@+id/label_title"
+        app:layout_constraintTop_toBottomOf="@+id/cst_folder">
+
+        <TextView
+            android:id="@+id/label_path"
+            style="@style/TextView.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/original_path"
+            android:textColor="@color/textColorSecondary"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_path"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_path"
+            style="@style/TextView.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1.6"
+            app:layout_constraintStart_toEndOf="@+id/label_path"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cst_modified"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintEnd_toEndOf="@+id/label_title"
+        app:layout_constraintStart_toStartOf="@+id/label_title"
+        app:layout_constraintTop_toBottomOf="@+id/cst_path">
+
+        <TextView
+            android:id="@+id/label_modified"
+            style="@style/TextView.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/last_modified"
+            android:textColor="@color/textColorSecondary"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_modified"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_modified"
+            style="@style/TextView.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1.6"
+            app:layout_constraintStart_toEndOf="@+id/label_modified"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btn_ok"
+        style="@style/Button.PrimaryRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:text="@string/ok"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cst_modified" />
+</androidx.constraintlayout.widget.ConstraintLayout>

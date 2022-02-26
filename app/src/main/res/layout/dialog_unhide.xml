@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_primary_radius_10">
+
+    <TextView
+        android:id="@+id/lbl_title"
+        style="@style/TextView.Medium"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:gravity="center_horizontal"
+        android:text="@string/unhide_title"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_path"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_title"
+        app:layout_constraintStart_toStartOf="@+id/lbl_title"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_title">
+
+        <RadioButton
+            android:id="@+id/rad_path"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingHorizontal="@dimen/dimen_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rad_original_path"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dimen_8"
+            android:text="@string/original_path"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        style="@style/Button.PrimaryRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:text="@string/cancel"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="@dimen/text_15"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_ok"
+        app:layout_constraintEnd_toStartOf="@id/btn_ok" />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        style="@style/Button.PrimaryRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:text="@string/unhide"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_path" />
+</androidx.constraintlayout.widget.ConstraintLayout>

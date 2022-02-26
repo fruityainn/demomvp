@@ -1,0 +1,5 @@
+<resources>
+    <integer name="rotate_0">180</integer>
+    <integer name="max_length_security_answer">12</integer>
+    <integer name="max_length_email">100</integer>
+</resources>

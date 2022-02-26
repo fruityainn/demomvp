@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_primary_radius_10">
+
+    <TextView
+        android:id="@+id/label_title"
+        style="@style/TextView.Medium"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/rename"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cst_name"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:background="@drawable/bg_light_radius_8"
+        app:layout_constraintEnd_toEndOf="@+id/label_title"
+        app:layout_constraintStart_toStartOf="@+id/label_title"
+        app:layout_constraintTop_toBottomOf="@+id/label_title">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txt_name"
+            style="@style/EditText.Regular"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_56"
+            android:background="@color/transparent"
+            android:hint="@string/file_name"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:maxLength="200"
+            android:selectAllOnFocus="true"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_ext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_ext"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_marginEnd="@dimen/dimen_12"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/text_16"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        style="@style/Button.PrimaryRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="@dimen/text_15"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_ok"
+        app:layout_constraintEnd_toStartOf="@id/btn_ok" />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        style="@style/Button.PrimaryRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cst_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

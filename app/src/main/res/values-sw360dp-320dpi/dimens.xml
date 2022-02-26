@@ -1,0 +1,60 @@
+<resources>
+    <dimen name="dimen_0">0dp</dimen>
+    <dimen name="dimen_1">0.9dp</dimen>
+    <dimen name="dimen_2">1.8dp</dimen>
+    <dimen name="dimen_3">2.8dp</dimen>
+    <dimen name="dimen_4">3dp</dimen>
+    <dimen name="dimen_5">4.5dp</dimen>
+    <dimen name="dimen_6">5dp</dimen>
+    <dimen name="dimen_8">7dp</dimen>
+    <dimen name="dimen_10">9dp</dimen>
+    <dimen name="dimen_11">10dp</dimen>
+    <dimen name="dimen_12">11dp</dimen>
+    <dimen name="dimen_16">15dp</dimen>
+    <dimen name="dimen_20">19dp</dimen>
+    <dimen name="dimen_24">23dp</dimen>
+    <dimen name="dimen_28">27dp</dimen>
+    <dimen name="dimen_30">28.5dp</dimen>
+    <dimen name="dimen_32">31dp</dimen>
+    <dimen name="dimen_35">33dp</dimen>
+    <dimen name="dimen_36">35dp</dimen>
+    <dimen name="dimen_40">38dp</dimen>
+    <dimen name="dimen_48">46dp</dimen>
+    <dimen name="dimen_50">46dp</dimen>
+    <dimen name="dimen_52">50dp</dimen>
+    <dimen name="dimen_56">52dp</dimen>
+    <dimen name="dimen_64">58dp</dimen>
+    <dimen name="dimen_72">68dp</dimen>
+    <dimen name="dimen_80">76dp</dimen>
+    <dimen name="dimen_96">90dp</dimen>
+    <dimen name="dimen_120">110dp</dimen>
+    <dimen name="dimen_140">130dp</dimen>
+    <dimen name="dimen_150">140dp</dimen>
+    <dimen name="dimen_192">175dp</dimen>
+    <dimen name="dimen_200">180dp</dimen>
+    <dimen name="dimen_250">235dp</dimen>
+    <dimen name="dimen_256">243dp</dimen>
+    <dimen name="dimen_320">300dp</dimen>
+    <dimen name="dimen_340">310dp</dimen>
+    <dimen name="dimen_400">360dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="text_10">9sp</dimen>
+    <dimen name="text_11">10sp</dimen>
+    <dimen name="text_12">11sp</dimen>
+    <dimen name="text_13">12sp</dimen>
+    <dimen name="text_14">13sp</dimen>
+    <dimen name="text_15">14sp</dimen>
+    <dimen name="text_16">15sp</dimen>
+    <dimen name="text_17">16sp</dimen>
+    <dimen name="text_18">17sp</dimen>
+    <dimen name="text_20">18.5sp</dimen>
+    <dimen name="text_22">20sp</dimen>
+    <dimen name="text_24">22sp</dimen>
+    <dimen name="text_28">25.5sp</dimen>
+    <dimen name="text_32">29sp</dimen>
+    <dimen name="text_38">35sp</dimen>
+
+    <!-- Others -->
+    <dimen name="divider">0.4dp</dimen>
+</resources>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar style="@style/ToolBarStyle">
+
+            <TextView
+                android:id="@+id/lbl_title"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:text="@string/settings"
+                android:textSize="@dimen/text_18" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_general"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:text="@string/general"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_18" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cst_remove_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary">
+
+                <TextView
+                    android:id="@+id/lbl_remove_ads"
+                    style="@style/TextView.Regular"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_12"
+                    android:padding="@dimen/dimen_16"
+                    android:text="@string/remove_ads"
+                    android:textSize="@dimen/text_16"
+                    app:drawableEndCompat="@drawable/ic_chevron_right"
+                    app:drawableStartCompat="@drawable/ic_vip"
+                    app:layout_constraintBottom_toTopOf="@+id/vw_remove_ads"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lbl_sale_off"
+                    style="@style/TextView.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:drawablePadding="@dimen/dimen_4"
+                    android:text="@string/sale_off"
+                    android:textSize="@dimen/text_20"
+                    android:visibility="gone"
+                    app:drawableTopCompat="@drawable/ic_sale"
+                    app:layout_constraintBottom_toTopOf="@+id/lbl_time_left"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lbl_time_left"
+                    style="@style/TextView.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:textColor="@color/textColorSecondary"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/vw_remove_ads"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_sale_off"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_sale_off"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_sale_off" />
+
+                <View
+                    android:id="@+id/vw_remove_ads"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="@dimen/divider"
+                    android:layout_marginStart="@dimen/dimen_52"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:alpha="0.5"
+                    android:background="@color/dividerColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/lbl_change_language"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/change_language"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_global_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_16"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/lbl_security"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/security"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_18" />
+
+            <TextView
+                android:id="@+id/lbl_change_password"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/change_password"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_lock_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginStart="@dimen/dimen_52"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:alpha="0.5"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/lbl_security_question"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/set_security_question"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_security_question_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginStart="@dimen/dimen_52"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:alpha="0.5"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/lbl_recovery_email"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/set_recovery_email"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_security_email_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginStart="@dimen/dimen_52"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:alpha="0.5"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/lbl_anti_lost_note"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/files_anti_lost"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_tips_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_16"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/lbl_other"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/other"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_18" />
+
+            <TextView
+                android:id="@+id/lbl_rate_app"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/rate_app"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_like_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginStart="@dimen/dimen_52"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:alpha="0.5"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/lbl_feedback"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/feedback_and_suggestion"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_feedback_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginStart="@dimen/dimen_52"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:alpha="0.5"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/lbl_report_translation"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/report_incorrect_translation"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_report_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginStart="@dimen/dimen_52"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:alpha="0.5"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/lbl_share_app"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/share_app"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_share_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginStart="@dimen/dimen_52"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:alpha="0.5"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/lbl_terms"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/terms_and_policy"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_terms_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginStart="@dimen/dimen_52"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:alpha="0.5"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/lbl_about"
+                style="@style/TextView.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:background="@drawable/btn_primary"
+                android:drawablePadding="@dimen/dimen_12"
+                android:padding="@dimen/dimen_16"
+                android:text="@string/about_us"
+                android:textSize="@dimen/text_16"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                app:drawableStartCompat="@drawable/ic_about_white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

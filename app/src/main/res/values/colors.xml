@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#37474f</color>
+    <color name="colorPrimaryLight">#62727b</color>
+    <color name="colorPrimaryDark">#303E45</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="colorAccent20">#334CAF50</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="textColorSecondary">#ACABAB</color>
+    <color name="textColorWarning">#FFEB3B</color>
+    <color name="dividerColor">#8E8E8E</color>
+    <color name="black">#000000</color>
+    <color name="black15">#26000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black60">#99000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#9A9A9A</color>
+    <color name="tabTextSelected">#ffffff</color>
+    <color name="tabTextUnSelected">#62727b</color>
+    <color name="bgColorNativeAd">#f5f5f5</color>
+</resources>

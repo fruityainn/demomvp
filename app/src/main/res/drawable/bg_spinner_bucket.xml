@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:colorControlHighlight">
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/bg_primary_round" />
+            <item
+                android:drawable="@drawable/ic_dropdown_white"
+                android:gravity="center_vertical|right"
+                android:right="@dimen/dimen_5" />
+        </layer-list>
+    </item>
+</ripple>

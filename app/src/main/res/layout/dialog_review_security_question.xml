@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_primary_radius_10"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16"
+    android:paddingVertical="@dimen/dimen_8">
+
+    <TextView
+        style="@style/TextView.Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/your_question"
+        android:textColor="@color/textColorSecondary" />
+
+    <TextView
+        android:id="@+id/lbl_question"
+        style="@style/TextView.Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:textSize="@dimen/text_16" />
+
+    <TextView
+        style="@style/TextView.Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/your_answer"
+        android:textColor="@color/textColorSecondary" />
+
+    <TextView
+        android:id="@+id/lbl_answer"
+        style="@style/TextView.Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:textSize="@dimen/text_16" />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        style="@style/Button.AccentRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_48"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:text="@string/got_it"
+        android:textSize="@dimen/text_18" />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        style="@style/Button.PrimaryRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/cancel"
+        android:textColor="@color/textColorSecondary" />
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_primary_radius_top_10"
+        android:elevation="@dimen/dimen_8"
+        android:paddingVertical="@dimen/dimen_16">
+
+        <FrameLayout
+            android:id="@+id/frl_native_ad_adding"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/frl_add_video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frl_add_video"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_72"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:background="@drawable/btn_primary_radius_10"
+            app:layout_constraintBottom_toTopOf="@+id/frl_add_audio"
+            app:layout_constraintEnd_toStartOf="@+id/frl_add_photo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_video"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_video"
+            app:layout_constraintBottom_toTopOf="@+id/label_video"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_video"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_video"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_video"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/label_video"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/video"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintBottom_toBottomOf="@+id/frl_add_video"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_video"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_video"
+            app:layout_constraintTop_toBottomOf="@+id/img_video" />
+
+        <FrameLayout
+            android:id="@+id/frl_add_photo"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_72"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:background="@drawable/btn_primary_radius_10"
+            app:layout_constraintEnd_toStartOf="@+id/frl_add_note"
+            app:layout_constraintStart_toEndOf="@+id/frl_add_video"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_video" />
+
+        <ImageView
+            android:id="@+id/img_image"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_photo"
+            app:layout_constraintBottom_toTopOf="@+id/label_image"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_photo"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_photo"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_photo"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/label_image"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/photo"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintBottom_toBottomOf="@+id/frl_add_photo"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_photo"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_photo"
+            app:layout_constraintTop_toBottomOf="@+id/img_image" />
+
+        <FrameLayout
+            android:id="@+id/frl_add_note"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_72"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:background="@drawable/btn_primary_radius_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frl_add_photo"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_video" />
+
+        <ImageView
+            android:id="@+id/img_note"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_notes"
+            app:layout_constraintBottom_toTopOf="@+id/label_note"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_note"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_note"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_note"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/label_note"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/note"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintBottom_toBottomOf="@+id/frl_add_note"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_note"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_note"
+            app:layout_constraintTop_toBottomOf="@+id/img_note" />
+
+        <FrameLayout
+            android:id="@+id/frl_add_audio"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_72"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:background="@drawable/btn_primary_radius_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/frl_add_camera"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_audio"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_headphones"
+            app:layout_constraintBottom_toTopOf="@+id/label_audio"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_audio"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_audio"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_audio"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/label_audio"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/audio"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintBottom_toBottomOf="@+id/frl_add_audio"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_audio"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_audio"
+            app:layout_constraintTop_toBottomOf="@+id/img_audio" />
+
+        <FrameLayout
+            android:id="@+id/frl_add_camera"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_72"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:background="@drawable/btn_primary_radius_10"
+            app:layout_constraintEnd_toStartOf="@+id/frl_add_other"
+            app:layout_constraintStart_toEndOf="@+id/frl_add_audio"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_audio" />
+
+        <ImageView
+            android:id="@+id/img_camera"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintBottom_toTopOf="@+id/label_camera"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_camera"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_camera"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_camera"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/label_camera"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/camera"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintBottom_toBottomOf="@+id/frl_add_camera"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_camera"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_camera"
+            app:layout_constraintTop_toBottomOf="@+id/img_camera" />
+
+        <FrameLayout
+            android:id="@+id/frl_add_other"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_72"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:background="@drawable/btn_primary_radius_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frl_add_camera"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_audio" />
+
+        <ImageView
+            android:id="@+id/img_other"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_open_folder"
+            app:layout_constraintBottom_toTopOf="@+id/label_other"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_other"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_other"
+            app:layout_constraintTop_toTopOf="@+id/frl_add_other"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/label_other"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/from_folder"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintBottom_toBottomOf="@+id/frl_add_other"
+            app:layout_constraintEnd_toEndOf="@+id/frl_add_other"
+            app:layout_constraintStart_toStartOf="@+id/frl_add_other"
+            app:layout_constraintTop_toBottomOf="@+id/img_other" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
